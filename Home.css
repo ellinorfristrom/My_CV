@@ -1,0 +1,104 @@
+* {
+  margin: 0px;
+}
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1vw;
+  background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+.header {
+  text-align: center;
+  font-size: larger;
+  padding: 10vw 0vw 9vw 0vw;
+  line-height: 9.5vw;
+  margin-top: 2vw;
+}
+h1 {
+  font-size: clamp(3rem, 8vw, 10vw);
+  font-family: "Allura", "Times New Roman";
+  line-height: clamp(2.2rem, 8vw, 9vw);
+  font-weight: 100;
+}
+h4 {
+  font-size: clamp(1rem, 2.2vw, 2.5vw);
+  font-family: "Homemade Apple", "Times New Roman";
+  line-height: clamp(1.2rem, 7vw, 8vw);
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+h3 {
+  padding-bottom: 3vw;
+  font-size: clamp(1.2rem, 3vw, 3.2vw);
+  font-weight: bolder;
+  font-family: "Cutive Mono", "Times New Roman";
+}
+p {
+  font-family: "Courier New", Courier, monospace;
+  font-size: clamp(1rem, 1.25vw, 1.5vw);
+  line-height: 1.3rem;
+}
+nav {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  font-size: clamp(1rem, 0.7vw, 1vw);
+}
+footer {
+  font-size: clamp(1rem, 0.4vw, 0.8vw);
+}
+nav,
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid whitesmoke;
+  box-shadow: 0.1px 0.1px 20px grey;
+  background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  text-align: center;
+  min-height: 5vw;
+  padding: 1vh;
+  font-size: clamp(1rem, 0.7vw, 1vw);
+}
+main {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "about about";
+  grid-template-rows: 0.5fr 0.5fr;
+  grid-template-columns: 40vw 40vw;
+  gap: 2vh 10vh;
+  justify-content: center;
+  align-items: center;
+}
+.header {
+  padding-top: 8vw;
+  grid-area: header;
+}
+.about {
+  grid-area: about;
+  margin-bottom: 10vw;
+}
+ul {
+  list-style: none;
+  padding: 0px;
+}
+li {
+  display: inline;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1em;
+  letter-spacing: 0.1vw;
+  padding: 0vw 8vw;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+@media screen and (max-width: 920px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    margin: 7vw;
+    font-size: 2vw;
+  }
+}
